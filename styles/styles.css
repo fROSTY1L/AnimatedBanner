@@ -46,8 +46,8 @@ video {
 
 .highlight span{
     background: black;
-    font-size: 65.2px;
-    padding: 0 .5rem;
+    font-size: 35px;
+    padding: 0 10px;
     z-index: 5;
 }
 
@@ -67,17 +67,32 @@ video {
 }
 
 .top {
-    height: 26px;
+    height: 18px;
     top: 0;
 }
 
 .bottom {
-    height: 13px;
+    height: 8px;
     bottom: 0;
 }
 
 .right {
     justify-content: end;
+}
+
+@media (min-width: 475px) {
+    .highlight span{
+        font-size: 65.2px;
+    }
+    .top {
+        height: 26px;
+        top: 0;
+    }
+    
+    .bottom {
+        height: 13px;
+        bottom: 0;
+    }
 }
 
 @media (min-width: 768px) {
